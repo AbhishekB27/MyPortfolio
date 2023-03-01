@@ -1,16 +1,16 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import MyLogo from "../../assets/Logo.png";
-
+import { Link } from "react-scroll";
 const Header = () => {
   const [burger, setBurger] = useState(true);
   return (
-    <header class="h-full w-full flex flex-col lg:flex-row justify-between items-center px-3 py-2 bg-white bg-opacity-50 backdrop-blur-xl rounded drop-shadow-lg">
+    <header class="h-full w-full flex flex-col lg:flex-row justify-between items-center bg-[#FFCC00] bg-opacity-30 px-3 py-2">
       <div className="font-poppins flex justify-between w-full">
         <div className="flex justify-start items-center gap-2 ">
           {" "}
           <img
-            className="w-[1.5rem] md:w-[2rem] lg:w-[3rem]"
+            className="w-[1.5rem] md:w-[2rem] lg:w-[3rem] hover:animate-spin cursor-pointer"
             src={MyLogo}
             alt=""
           />{" "}
@@ -47,34 +47,34 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <div className="w-full border-t-2 lg:border-none border-white">
+      <div className="w-full border-t-2 lg:border-none border-white font-medium md:font-semibold">
         <ol
           className={`${
             !burger
               ? "flex h-[400px] overflow-hidden"
-              : " pt-0 lg:flex h-[0px] overflow-hidden"
-          } pt-[14px] lg:pt-0 lg:flex lg:h-auto lg:flex-row flex-col space-x-0 space-y-5 transition-all duration-500 lg:space-y-0 lg:space-x-6 justify-start items-start lg:justify-start lg:items-center text-[#FFCC00]`}
+              : "lg:flex h-[0px] overflow-hidden"
+          } lg:pt-0 lg:flex lg:h-auto lg:flex-row flex-col  pt-[14px] space-x-0 space-y-5 transition-all duration-500 lg:space-y-0 lg:space-x-6 justify-start items-start lg:justify-end lg:items-center text-[#FFCC00 text-white`}
         >
           {/* nav items */}
           {[
             "Home",
             "About",
-            "Projects",
             "Skills",
+            "Projects",
             "Experience",
-            "Education",
             "Contact",
           ].map((item) => {
             return (
-              <li className="text-lg cursor-pointer lg:bg-gradient-to-r lg:from-[#FFCC00] lg:to-[#FFCC00] lg:bg-left-bottom lg:bg-no-repeat lg:bg-[length:0%_3px] lg:hover:bg-[length:100%_3px] lg:transition-all">
+                <Link to={`${item}`} activeClass='active' spy={true} smooth={true} offset={50} duration={500}>
+              <li className="text-lg cursor-pointer lg:bg-gradient-to-r lg:from-white lg:to-white lg:bg-left-bottom lg:bg-no-repeat lg:bg-[length:0%_3px] lg:hover:bg-[length:100%_3px] lg:transition-all">
                 {item}
               </li>
+              </Link>
             );
           })}
           <li className="">
             <motion.button
-              whileTap={{ scale: 0.8 }}
-              transition={{ duration: 0.1 }}
+              whileTap={{ scale: 0.9 }}
               className="flex  gap-2 justify-center items-center border border-white py-1 px-2 rounded-md bg-white text-[#FFCC00] cursor-pointer"
             >
               {" "}
