@@ -16,7 +16,7 @@ const HeroSection = () => {
         >
           <div className="text-lg md:text-xl lg:text-2xl leading-6 w-full lg:w-auto text-center lg:text-left">
             {" "}
-            <h1 className="flex text-lg md:text-2xl lg:text-4xl font-poppins font-medium">
+            <h1 className="flex justify-center lg:justify-start text-lg md:text-2xl lg:text-4xl font-poppins font-medium">
               Hi, I'm Abhishek <span className="waveAnimation">👋</span>
             </h1>{" "}
             <span>I am </span>
@@ -45,11 +45,11 @@ const HeroSection = () => {
               and frameworks.
             </p>
           </div>
-          <div className="text-[#FFBE00] space-x-2">
+          <div className="text-[#FFBE00] gap-[0.5rem] flex max-[310px]:flex-col justify-center items-center">
             <motion.button
               whileHover={{ boxShadow: "0px 0px 8px rgba(255, 255, 255, 1)" }}
               whileTap={{ scale: 0.9 }}
-              className="px-4 py-2 rounded-md bg-white w-[12rem]"
+              className="px-4 py-2 rounded-md bg-white max-[360px]:text-xs text-sm max-[360px]:w-[9rem] w-[10rem] md:w-[12rem]"
             >
               {" "}
               <i class="fa-brands fa-linkedin"></i> View On LinkedIn{" "}
@@ -57,7 +57,7 @@ const HeroSection = () => {
             <motion.button
               whileHover={{ boxShadow: "0px 0px 8px rgba(255, 255, 255, 1)" }}
               whileTap={{ scale: 0.9 }}
-              className="px-4 py-2 rounded-md bg-white w-[12rem]"
+              className="px-4 py-2 rounded-md bg-white max-[360px]:text-xs text-sm max-[360px]:w-[9rem] w-[10rem] md:w-[12rem]"
             >
               {" "}
               <i class="fa-brands fa-github"></i> View On GitHub{" "}

@@ -39,6 +39,7 @@ const Skills = () => {
         </div>
         <div className="grid place-items-center w-full gap-2 md:gap-4 lg:gap-y-5 max-[370px]:grid-cols-2 grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
           <CircleIndicator name="React" percent={85} imageURL={reactI} />
+          <CircleIndicator name="Redux" percent={80} imageURL={reduxI} />
           <CircleIndicator name="HTML" percent={90} imageURL={htmlI} />
           <CircleIndicator name="CSS" percent={85} imageURL={cssI} />
           <CircleIndicator name="JS" percent={75} imageURL={jsI} />
@@ -49,7 +50,6 @@ const Skills = () => {
           <CircleIndicator name="MongoDB" percent={65} imageURL={mongodbI} />
           <CircleIndicator name="Firebase" percent={45} imageURL={firebaseI} />
           <CircleIndicator name="Tailwind" percent={90} imageURL={tailwindI} />
-          <CircleIndicator name="Redux" percent={80} imageURL={reduxI} />
         </div>
       </motion.div>
     </div>
