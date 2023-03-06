@@ -2,8 +2,12 @@ import { motion } from "framer-motion";
 import React, { useState } from "react";
 import MyLogo from "../../assets/Logo.png";
 import { Link } from "react-scroll";
+import MyPdf from '../../assets/MyPortfolio.pdf'
 const Header = () => {
   const [burger, setBurger] = useState(true);
+  const handleResume = () => {
+    window.open(`${MyPdf}`,'_blank')
+  }
   return (
     <header class="h-full w-full flex flex-col lg:flex-row justify-between items-center bg-[#FFCC00] bg-opacity-30 px-3 py-2">
       <div className="font-poppins flex justify-between w-full">
@@ -74,6 +78,7 @@ const Header = () => {
           })}
           <li className="">
             <motion.button
+            onClick={handleResume}
               whileTap={{ scale: 0.9 }}
               className="flex  gap-2 justify-center items-center border border-white py-1 px-2 rounded-md bg-white text-[#FFCC00] cursor-pointer"
             >
