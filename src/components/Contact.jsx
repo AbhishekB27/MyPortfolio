@@ -67,15 +67,21 @@ const Contact = () => {
         </div>
         <div className="col-auto text-center md:col-span-2 text-3xl md:text-4xl space-x-3 flex justify-center items-center">
           {" "}
+          <a href="https://www.linkedin.com/in/abhishek-bahuguna-21970816a/" target="_blank" rel="noopener noreferrer">
           <div className="w-[3rem]  h-[3rem] md:w-[3.5rem] md:h-[3.5rem] rounded-full text-white hover:text-yellow-400 hover:bg-white cursor-pointer transition-all grid place-items-center">
             <i class="fa-brands fa-linkedin-in"></i>
           </div>
+          </a>
+          <a href="https://github.com/AbhishekB27" target="_blank" rel="noopener noreferrer">
           <div className="w-[3rem] h-[3rem] md:w-[3.5rem] md:h-[3.5rem] rounded-full text-white hover:text-yellow-400 hover:bg-white cursor-pointer transition-all grid place-items-center">
             <i class="fa-brands fa-github"></i>
           </div>
+          </a>
+          <a href="https://www.instagram.com/abhishek.bahuguna.904/" target="_blank" rel="noopener noreferrer">
           <div className="w-[3rem] h-[3rem] md:w-[3.5rem] md:h-[3.5rem] rounded-full text-white hover:text-yellow-400 hover:bg-white cursor-pointer transition-all grid place-items-center">
           <i class="fa-brands fa-instagram"></i>
           </div>
+          </a>
         </div>
       </motion.div>
     </div>

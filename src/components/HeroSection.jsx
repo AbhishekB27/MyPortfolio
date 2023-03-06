@@ -46,6 +46,7 @@ const HeroSection = () => {
             </p>
           </div>
           <div className="text-[#FFBE00] gap-[0.5rem] flex max-[310px]:flex-col justify-center items-center">
+            <a href="https://www.linkedin.com/in/abhishek-bahuguna-21970816a/" target="_blank" rel="noopener noreferrer">
             <motion.button
               whileHover={{ boxShadow: "0px 0px 8px rgba(255, 255, 255, 1)" }}
               whileTap={{ scale: 0.9 }}
@@ -54,6 +55,8 @@ const HeroSection = () => {
               {" "}
               <i class="fa-brands fa-linkedin"></i> View On LinkedIn{" "}
             </motion.button>{" "}
+            </a>
+            <a href="https://github.com/AbhishekB27" target="_blank" rel="noopener noreferrer">
             <motion.button
               whileHover={{ boxShadow: "0px 0px 8px rgba(255, 255, 255, 1)" }}
               whileTap={{ scale: 0.9 }}
@@ -62,6 +65,7 @@ const HeroSection = () => {
               {" "}
               <i class="fa-brands fa-github"></i> View On GitHub{" "}
             </motion.button>
+            </a>
           </div>
         </motion.div>
         <div className="grid place-items-center">
