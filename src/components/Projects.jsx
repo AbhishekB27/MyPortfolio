@@ -27,10 +27,10 @@ const Projects = () => {
         </div>
         <div className="grid gap-3 grid-cols-[repeat(auto-fit,_minmax(250px,1fr))]">
         <a href="https://zomato-clone-sable.vercel.app/" target="_blank" rel="noopener noreferrer">
-        <motion.div whileTap={{scale:0.9}} className="relative h-[20rem] hover:shadow-md bg-yellow-300 cursor-pointer group rounded-md overflow-hidden">
-        <div className="absolute grid place-items-center text-lg w-full h-full backdrop-blur-sm group-hover:h-0 bg-white/30 overflow-hidden transition-all">
+        <motion.div whileTap={{scale:0.9}} className="relative min-h-[20rem] hover:shadow-md bg-white cursor-pointer group rounded-md overflow-hidden">
+        {/* <div className="absolute grid place-items-center text-lg w-full h-full backdrop-blur-sm group-hover:h-0 bg-white/30 overflow-hidden transition-all">
             <button className="bg-yellow-300/90 text-white px-3 py-2 rounded-md">Hover Me</button>
-          </div>
+          </div> */}
           <div className="w-full h-full bg-white space-y-2">
             <img className="" src={Zomato} alt="" />
             <div className="px-2 space-y-1 border-t-2 border-t-black/70 bg-white font-medium">
@@ -45,10 +45,10 @@ const Projects = () => {
         </motion.div>
         </a>
         <a href="https://foodies-clone.vercel.app/" target="_blank" rel="noopener noreferrer">
-        <motion.div whileTap={{scale:0.9}} className="relative h-[20rem] hover:shadow-md bg-yellow-300 cursor-pointer group rounded-md overflow-hidden">
-        <div className="absolute grid place-items-center text-lg w-full h-full backdrop-blur-sm group-hover:h-0 bg-white/30 overflow-hidden transition-all">
+        <motion.div whileTap={{scale:0.9}} className="relative min-h-[20rem] hover:shadow-md bg-white cursor-pointer group rounded-md overflow-hidden">
+        {/* <div className="absolute grid place-items-center text-lg w-full h-full backdrop-blur-sm group-hover:h-0 bg-white/30 overflow-hidden transition-all">
             <button className="bg-yellow-300/90 text-white px-3 py-2 rounded-md">Hover Me</button>
-          </div>
+          </div> */}
           <div className="w-full h-full bg-white space-y-2">
             <img className="" src={Foodies} alt="" />
             <div className="px-2 space-y-1 border-t-2 border-t-black/70 bg-white font-medium">
@@ -65,10 +65,10 @@ const Projects = () => {
         </a>
         
         <a href="https://payment-integration-ui.vercel.app/" target="_blank" rel="noopener noreferrer">
-        <motion.div whileTap={{scale:0.9}} className="relative h-[20rem] hover:shadow-md bg-yellow-300 cursor-pointer group rounded-md overflow-hidden">
-        <div className="absolute grid place-items-center text-lg w-full h-full backdrop-blur-sm group-hover:h-0 bg-white/30 overflow-hidden transition-all">
+        <motion.div whileTap={{scale:0.9}} className="relative min-h-[20rem] hover:shadow-md bg-white cursor-pointer group rounded-md overflow-hidden">
+        {/* <div className="absolute grid place-items-center text-lg w-full h-full backdrop-blur-sm group-hover:h-0 bg-white/30 overflow-hidden transition-all">
             <button className="bg-yellow-300/90 text-white px-3 py-2 rounded-md">Hover Me</button>
-          </div>
+          </div> */}
           <div className="w-full h-full bg-white space-y-2">
             <img className="" src={PaymentUI} alt="" />
             <div className="px-2 space-y-1 border-t-2 border-t-black/70 bg-white font-medium">
@@ -84,10 +84,10 @@ const Projects = () => {
         </a>
         
         <a href="https://dc-photography.vercel.app/" target="_blank" rel="noopener noreferrer">
-        <motion.div whileTap={{scale:0.9}} className="relative h-[20rem] hover:shadow-md bg-yellow-300 cursor-pointer group rounded-md overflow-hidden">
-        <div className="absolute grid place-items-center text-lg w-full h-full backdrop-blur-sm group-hover:h-0 bg-white/30 overflow-hidden transition-all">
+        <motion.div whileTap={{scale:0.9}} className="relative min-h-[20rem] hover:shadow-md bg-white cursor-pointer group rounded-md overflow-hidden">
+        {/* <div className="absolute grid place-items-center text-lg w-full h-full backdrop-blur-sm group-hover:h-0 bg-white/30 overflow-hidden transition-all">
             <button className="bg-yellow-300/90 text-white px-3 py-2 rounded-md">Hover Me</button>
-          </div>
+          </div> */}
           <div className="w-full h-full bg-white space-y-2">
             <img className="" src={Photography} alt="" />
             <div className="px-2 space-y-1 border-t-2 border-t-black/70 bg-white font-medium">
@@ -103,15 +103,15 @@ const Projects = () => {
         </a>
         
         <a href="https://e-commerce-frontend-2ewk.vercel.app/" target="_blank" rel="noopener noreferrer">
-        <motion.div whileTap={{scale:0.9}} className="relative h-[20rem] hover:shadow-md bg-yellow-300 cursor-pointer group rounded-md overflow-hidden">
-          <div className="absolute grid place-items-center text-lg w-full h-full backdrop-blur-sm group-hover:h-0 bg-white/30 overflow-hidden transition-all">
+        <motion.div whileTap={{scale:0.9}} className="relative min-h-[20rem] hover:shadow-md bg-white cursor-pointer group rounded-md overflow-hidden">
+          {/* <div className="absolute grid place-items-center text-lg w-full h-full backdrop-blur-sm group-hover:h-0 bg-white/30 overflow-hidden transition-all">
             <button className="bg-yellow-300/90 text-white px-3 py-2 rounded-md">Hover Me</button>
-          </div>
+          </div> */}
           <div className="w-full h-full bg-white space-y-2">
             <img className="" src={Ecommerce} alt="" />
             <div className="px-2 space-y-1 border-t-2 border-t-black/70 bg-white font-medium">
               <span> E-Commerce Application Using MERN and other cool libraries. </span>
-              <div className="flex flex-wrap">
+              <div className="flex flex-wrap py-1">
                 {" "}
                 <img className="w-[3rem]" src={ReactI} alt="" />{" "}
                 <img className="w-[3rem]" src={Tailwind} alt="" />{" "}
