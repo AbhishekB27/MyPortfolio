@@ -51,43 +51,25 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <div className="w-full border-t-2 lg:border-none border-white font-medium md:font-semibold">
-        <ol
-          className={`${
-            !burger
-              ? "flex h-[400px] overflow-hidden"
-              : "lg:flex h-[0px] overflow-hidden"
-          } lg:pt-0 lg:flex lg:h-auto lg:flex-row flex-col  pt-[14px] space-x-0 space-y-5 transition-all duration-500 lg:space-y-0 lg:space-x-6 justify-start items-start lg:justify-end lg:items-center text-[#FFCC00 text-white`}
-        >
-          {/* nav items */}
-          {[
-            "Home",
-            "About",
-            "Skills",
-            "Projects",
-            "Experience",
-            "Contact",
-          ].map((item) => {
-            return (
-                <Link to={`${item}`} activeClass='active' spy={true} smooth={true} offset={50} duration={500}>
-              <li className="text-lg cursor-pointer lg:bg-gradient-to-r lg:from-white lg:to-white lg:bg-left-bottom lg:bg-no-repeat lg:bg-[length:0%_3px] lg:hover:bg-[length:100%_3px] lg:transition-all">
-                {item}
-              </li>
-              </Link>
-            );
-          })}
-          <li className="">
+      <div className={`lg:block  fixed top-[4rem] bg-yellow-300/90 backdrop-blur-sm lg:backdrop-blur-0 lg:bg-transparent text-lg font-medium text-white ${burger ? 'h-[0]' : 'h-[90vh]'} z-50 overflow-hidden lg:overflow-auto transition-all lg:transition-none duration-700 lg:h-auto left-0 w-full lg:static`}>
+            <ol className='flex lg:flex-row flex-col w-full lg:w-auto items-start h-full lg:h-auto justify-evenly pl-4 lg:pl-0  lg:justify-end lg:items-center lg:space-x-8'>
+            {
+                ['Home', 'About', 'Skills', 'Projects','Experience','Contact'].map(item => {
+                    return <Link onClick={()=>{setBurger(!burger)}} to={`${item === 'Home' ? '/' : item}`}> <li className='cursor-pointer lg:bg-gradient-to-r lg:from-white lg:to-white lg:bg-right-bottom lg:bg-no-repeat lg:bg-[length:0%_3px] lg:hover:bg-[length:70%_3px] lg:transition-all'>{item}</li> </Link>
+                })
+            }
+            <li className="">
             <motion.button
             onClick={handleResume}
               whileTap={{ scale: 0.9 }}
-              className="flex  gap-2 justify-center items-center border border-white py-1 px-2 rounded-md bg-white text-[#FFCC00] cursor-pointer"
+              className="flex  gap-2 font-normal text-base justify-center items-center border border-white py-1 px-2 rounded-md bg-white text-[#FFCC00] cursor-pointer"
             >
               {" "}
               Resume <i class="fa-regular fa-download animate-bounce"></i>{" "}
             </motion.button>
           </li>
-        </ol>
-      </div>
+            </ol>
+        </div>
     </header>
   );
 };

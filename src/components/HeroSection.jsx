@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import Profile from "./../assets/profile-pic (6).png";
 import { TypeAnimation } from "react-type-animation";
+import MyClassComponent from "./MyClassComponent";
 
 const HeroSection = () => {
   return (
@@ -84,6 +85,7 @@ const HeroSection = () => {
           </motion.div>
         </div>
       </div>
+      {/* <MyClassComponent/> */}
     </div>
   );
 };
