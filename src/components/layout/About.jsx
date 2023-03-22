@@ -1,7 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import React, { useEffect } from "react";
-import AboutMe from "./../assets/AboutMe.png";
+import AboutMe from "../../assets/AboutMe.png";
 
 const About = () => {
   const controls = useAnimation();

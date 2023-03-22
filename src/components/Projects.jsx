@@ -27,7 +27,7 @@ const Projects = () => {
         </div>
         <div className="grid gap-3 grid-cols-[repeat(auto-fit,_minmax(250px,1fr))]">
         <a href="https://zomato-clone-sable.vercel.app/" target="_blank" rel="noopener noreferrer">
-        <motion.div whileTap={{scale:0.9}} className="relative min-h-[20rem] hover:shadow-md bg-white cursor-pointer group rounded-md overflow-hidden">
+        <motion.div whileHover={{ scale: 1.05, transition: { duration: 0.2 } }} whileTap={{scale:0.9}} className="relative min-h-[20rem] hover:shadow-md bg-white cursor-pointer group rounded-md overflow-hidden">
         {/* <div className="absolute grid place-items-center text-lg w-full h-full backdrop-blur-sm group-hover:h-0 bg-white/30 overflow-hidden transition-all">
             <button className="bg-yellow-300/90 text-white px-3 py-2 rounded-md">Hover Me</button>
           </div> */}
@@ -45,7 +45,7 @@ const Projects = () => {
         </motion.div>
         </a>
         <a href="https://foodies-clone.vercel.app/" target="_blank" rel="noopener noreferrer">
-        <motion.div whileTap={{scale:0.9}} className="relative min-h-[20rem] hover:shadow-md bg-white cursor-pointer group rounded-md overflow-hidden">
+        <motion.div whileHover={{ scale: 1.05, transition: { duration: 0.2 } }} whileTap={{scale:0.9}} className="relative min-h-[20rem] hover:shadow-md bg-white cursor-pointer group rounded-md overflow-hidden">
         {/* <div className="absolute grid place-items-center text-lg w-full h-full backdrop-blur-sm group-hover:h-0 bg-white/30 overflow-hidden transition-all">
             <button className="bg-yellow-300/90 text-white px-3 py-2 rounded-md">Hover Me</button>
           </div> */}
@@ -65,7 +65,7 @@ const Projects = () => {
         </a>
         
         <a href="https://payment-integration-ui.vercel.app/" target="_blank" rel="noopener noreferrer">
-        <motion.div whileTap={{scale:0.9}} className="relative min-h-[20rem] hover:shadow-md bg-white cursor-pointer group rounded-md overflow-hidden">
+        <motion.div whileHover={{ scale: 1.05, transition: { duration: 0.2 } }} whileTap={{scale:0.9}} className="relative min-h-[20rem] hover:shadow-md bg-white cursor-pointer group rounded-md overflow-hidden">
         {/* <div className="absolute grid place-items-center text-lg w-full h-full backdrop-blur-sm group-hover:h-0 bg-white/30 overflow-hidden transition-all">
             <button className="bg-yellow-300/90 text-white px-3 py-2 rounded-md">Hover Me</button>
           </div> */}
@@ -84,7 +84,7 @@ const Projects = () => {
         </a>
         
         <a href="https://dc-photography.vercel.app/" target="_blank" rel="noopener noreferrer">
-        <motion.div whileTap={{scale:0.9}} className="relative min-h-[20rem] hover:shadow-md bg-white cursor-pointer group rounded-md overflow-hidden">
+        <motion.div whileHover={{ scale: 1.05, transition: { duration: 0.2 } }} whileTap={{scale:0.9}} className="relative min-h-[20rem] hover:shadow-md bg-white cursor-pointer group rounded-md overflow-hidden">
         {/* <div className="absolute grid place-items-center text-lg w-full h-full backdrop-blur-sm group-hover:h-0 bg-white/30 overflow-hidden transition-all">
             <button className="bg-yellow-300/90 text-white px-3 py-2 rounded-md">Hover Me</button>
           </div> */}
@@ -103,7 +103,7 @@ const Projects = () => {
         </a>
         
         <a href="https://e-commerce-frontend-2ewk.vercel.app/" target="_blank" rel="noopener noreferrer">
-        <motion.div whileTap={{scale:0.9}} className="relative min-h-[20rem] hover:shadow-md bg-white cursor-pointer group rounded-md overflow-hidden">
+        <motion.div whileHover={{ scale: 1.05, transition: { duration: 0.2 } }} whileTap={{scale:0.9}} className="relative min-h-[20rem] hover:shadow-md bg-white cursor-pointer group rounded-md overflow-hidden">
           {/* <div className="absolute grid place-items-center text-lg w-full h-full backdrop-blur-sm group-hover:h-0 bg-white/30 overflow-hidden transition-all">
             <button className="bg-yellow-300/90 text-white px-3 py-2 rounded-md">Hover Me</button>
           </div> */}

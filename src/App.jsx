@@ -1,4 +1,5 @@
-import MyPortfolio from './components/MyPortfolio'
+import MyPortfolio from "./components/MyPortfolio";
+
 
 function App() {
   const divStyle = {

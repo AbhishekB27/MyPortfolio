@@ -1,5 +1,5 @@
 import React from 'react'
-import About from './About'
+import About from './layout/About'
 import CircleIndicator from './CicleIndicator'
 import Contact from './Contact'
 import HeroSection from './HeroSection'
