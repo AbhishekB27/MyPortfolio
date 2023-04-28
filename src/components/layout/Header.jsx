@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React, { useState } from "react";
 import MyLogo from "../../assets/Logo.png";
 import { Link } from "react-scroll";
-import MyPdf from '../../assets/MyPortfolio.pdf'
+import MyPdf from '../../assets/MyPortfolio2.0.pdf'
 const Header = () => {
   const [burger, setBurger] = useState(true);
   const handleResume = () => {
